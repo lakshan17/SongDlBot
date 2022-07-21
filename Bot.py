@@ -55,7 +55,7 @@ DB_CHANNEL = "-1001511610738"
 @SDBotz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     try:
-        await message._client.get_chat_member(int("-1001475839216"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001648101808"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(
         text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
